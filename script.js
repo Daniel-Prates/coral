@@ -1,56 +1,55 @@
-// 1. BANCO DE DADOS DAS MÚSICAS
-// Você pode adicionar fora de ordem aqui, o JS vai organizar sozinho!
+// BANCO DE DADOS DAS MÚSICAS
 const repertorio = [
+  {
+    numero: "17",
+    titulo: "Vem Brilhar Jesus",
+    audios: {
+      soprano: "audios/graca_soprano.mp3",
+      contralto: "audios/graca_contralto.mp3",
+      tenor: "audios/graca_tenor.mp3",
+      baixo: "audios/17_vem_brilhar_em_mim_baixo.ogg",
+      playback: "audios/graca_playback.mp3",
+    },
+  },
   {
     numero: "18",
     titulo: "Levem a Luz",
     audios: {
-      soprano: "audios/levem_soprano.mp3",
-      contralto: "audios/levem_contralto.mp3",
-      tenor: "audios/levem_tenor.mp3",
-      baixo: "audios/18_levem_a_luz_baixo.ogg",
-      playback: "audios/levem_playback.mp3",
-    },
-  },
-  {
-    numero: "43",
-    titulo: "Vem Reinar",
-    audios: {
-      soprano: "audios/castelo_b_soprano.mp3",
-      contralto: "audios/castelo_b_contralto.mp3",
-      tenor: "audios/castelo_b_tenor.mp3",
-      baixo: "audios/43_vem_reinar_baixo.ogg",
-      playback: "audios/castelo_b_playback.mp3",
-    },
-  },
-  {
-    numero: "17",
-    titulo: "Vem Brilhar em mim",
-    audios: {
       soprano: "audios/castelo_soprano.mp3",
       contralto: "audios/castelo_contralto.mp3",
       tenor: "audios/castelo_tenor.mp3",
-      baixo: "audios/17_vem_brilhar_em_mim_baixo.ogg",
+      baixo: "audios/18_levem_a_luz_baixo.ogg",
       playback: "audios/castelo_playback.mp3",
     },
   },
   {
     numero: "37",
-    titulo: "Aleluia a Ti",
+    titulo: "Aleluia a ti",
     audios: {
-      soprano: "audios/graca_soprano.mp3",
-      contralto: "audios/graca_contralto.mp3",
-      tenor: "audios/graca_tenor.mp3",
+      soprano: "audios/levem_soprano.mp3",
+      contralto: "audios/levem_contralto.mp3",
+      tenor: "audios/levem_tenor.mp3",
       baixo: "audios/37_aleluia_a_ti_baixo.ogg",
-      playback: "audios/graca_playback.mp3",
+      playback: "audios/levem_playback.mp3",
+    },
+  },
+  {
+    numero: "43",
+    titulo: "Vem reinar",
+    audios: {
+      soprano: "audios/levem_soprano.mp3",
+      contralto: "audios/levem_contralto.mp3",
+      tenor: "audios/levem_tenor.mp3",
+      baixo: "audios/43_vem_reinar_baixo.ogg",
+      playback: "audios/levem_playback.mp3",
     },
   },
 ];
 
-let currentSongNum = null;
-let currentSongData = null;
+let musicaAbertaNumero = null;
+let audioAtual = null;
 
-// 2. FUNÇÃO DE ORDENAÇÃO AUTOMÁTICA (Trata números e subnúmeros como 17b)
+// ORDENAÇÃO AUTOMÁTICA
 function ordenarRepertorio(lista) {
   return [...lista].sort((a, b) => {
     return String(a.numero).localeCompare(String(b.numero), undefined, {
@@ -60,7 +59,7 @@ function ordenarRepertorio(lista) {
   });
 }
 
-// 3. RENDERIZAR A LISTA NA TELA
+// RENDERIZAR MÚSICAS
 function renderizarMusicas(lista) {
   const songList = document.getElementById("songList");
   if (!songList) return;
@@ -73,88 +72,108 @@ function renderizarMusicas(lista) {
     return;
   }
 
-  // Ordena a lista antes de desenhar na tela
   const listaOrdenada = ordenarRepertorio(lista);
 
   listaOrdenada.forEach((musica) => {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className =
-      "song-card w-full text-left p-4 bg-slate-800 rounded-lg cursor-pointer hover:bg-slate-700 active:bg-slate-600 transition-colors mb-2";
+    const itemContainer = document.createElement("div");
+    itemContainer.className =
+      "bg-slate-800 rounded-xl overflow-hidden border border-slate-700/50 shadow-md";
 
-    button.setAttribute("data-numero", musica.numero);
+    // Botão da Música
+    const isAberta = musicaAbertaNumero === musica.numero;
 
-    // Junta o número com o título automaticamente na exibição
-    button.innerHTML = `<h3 class="font-semibold text-white pointer-events-none">${musica.numero}. ${musica.titulo}</h3>`;
-    songList.appendChild(button);
+    itemContainer.innerHTML = `
+      <button type="button" 
+              class="song-card w-full text-left p-4 flex justify-between items-center cursor-pointer hover:bg-slate-750 active:bg-slate-700 transition-colors ${isAberta ? "bg-slate-700 text-indigo-400" : "text-white"}"
+              data-numero="${musica.numero}">
+        <h3 class="font-semibold pointer-events-none">${musica.numero}. ${musica.titulo}</h3>
+        <span class="text-slate-400 text-xs pointer-events-none">${isAberta ? "▲" : "▼"}</span>
+      </button>
+
+      <!-- Player Integrado (Sanfona) -->
+      <div class="player-content ${isAberta ? "flex" : "hidden"} flex-col items-center p-4 bg-slate-850 border-t border-slate-700/50">
+        
+        <!-- Roda Genius -->
+        <div class="genius-wheel my-2">
+          <button type="button" class="slice soprano" data-naipe="soprano" data-numero="${musica.numero}">Soprano</button>
+          <button type="button" class="slice contralto" data-naipe="contralto" data-numero="${musica.numero}">Contralto</button>
+          <button type="button" class="slice tenor" data-naipe="tenor" data-numero="${musica.numero}">Tenor</button>
+          <button type="button" class="slice baixo" data-naipe="baixo" data-numero="${musica.numero}">Baixo</button>
+          <button type="button" class="center-circle" data-naipe="playback" data-numero="${musica.numero}">Playback</button>
+        </div>
+
+        <!-- Audio Player -->
+        <div class="w-full mt-2">
+          <p class="track-label text-xs text-slate-400 mb-2 text-center">Selecione um naipe ou playback</p>
+          <audio class="audio-player w-full" controls></audio>
+        </div>
+
+      </div>
+    `;
+
+    songList.appendChild(itemContainer);
   });
 }
 
-// 4. DELEGAÇÃO DE EVENTO GLOBAL (Suporte Mobile)
+// DELEGAÇÃO DE EVENTOS
 document.addEventListener("click", function (event) {
+  // 1. Clique para Abrir/Recolher Música
   const songCard = event.target.closest(".song-card");
-  if (!songCard) return;
+  if (songCard) {
+    const numero = songCard.getAttribute("data-numero");
 
-  const numero = songCard.getAttribute("data-numero");
-  const musica = repertorio.find((m) => String(m.numero) === String(numero));
+    // Se clicar na mesma que está aberta: fecha
+    if (musicaAbertaNumero === numero) {
+      musicaAbertaNumero = null;
+    } else {
+      musicaAbertaNumero = numero;
+    }
 
-  if (musica) {
-    togglePlayer(musica);
-  }
-});
+    // Para qualquer som tocando
+    if (audioAtual) {
+      audioAtual.pause();
+      audioAtual.src = "";
+    }
 
-// 5. LÓGICA DE ABRIR/RECOLHER (TOGGLE)
-function togglePlayer(musica) {
-  const playerSection = document.getElementById("playerSection");
-  const audio = document.getElementById("audioPlayer");
-
-  if (currentSongNum === musica.numero) {
-    audio.pause();
-    audio.src = "";
-    playerSection.classList.add("hidden");
-    currentSongNum = null;
-    currentSongData = null;
+    // Re-desenha mantendo o estado correto
+    const termo =
+      document.getElementById("searchInput")?.value.toLowerCase() || "";
+    const filtradas = repertorio.filter(
+      (m) =>
+        m.titulo.toLowerCase().includes(termo) ||
+        String(m.numero).toLowerCase().includes(termo),
+    );
+    renderizarMusicas(filtradas);
     return;
   }
 
-  currentSongNum = musica.numero;
-  currentSongData = musica.audios;
+  // 2. Clique em um Naipe da Roda Genius
+  const sliceBtn = event.target.closest(".slice, .center-circle");
+  if (sliceBtn) {
+    const naipe = sliceBtn.getAttribute("data-naipe");
+    const numero = sliceBtn.getAttribute("data-numero");
+    const musica = repertorio.find((m) => String(m.numero) === String(numero));
 
-  document.getElementById("selectedTitle").innerText =
-    `${musica.numero}. ${musica.titulo}`;
-  document.getElementById("trackLabel").innerText =
-    "Selecione um naipe ou playback";
+    if (!musica || !musica.audios[naipe]) return;
 
-  audio.pause();
-  audio.src = "";
+    const parentContent = sliceBtn.closest(".player-content");
+    const audio = parentContent.querySelector(".audio-player");
+    const label = parentContent.querySelector(".track-label");
 
-  playerSection.classList.remove("hidden");
-}
-
-// 6. TOCAR FAIXA SELECIONADA
-function playTrack(type) {
-  if (!currentSongData) return;
-  const audio = document.getElementById("audioPlayer");
-  const label = document.getElementById("trackLabel");
-
-  const caminhoAudio = currentSongData[type];
-
-  if (caminhoAudio) {
-    label.innerText = `Tocando: ${type.toUpperCase()}`;
-    audio.src = caminhoAudio;
+    audioAtual = audio;
+    label.innerText = `Tocando: ${naipe.toUpperCase()}`;
+    audio.src = musica.audios[naipe];
 
     const playPromise = audio.play();
     if (playPromise !== undefined) {
       playPromise.catch(() => {
-        label.innerText = `Clique no Play para ouvir (${type.toUpperCase()})`;
+        label.innerText = `Clique no Play para ouvir (${naipe.toUpperCase()})`;
       });
     }
-  } else {
-    label.innerText = `Faixa de ${type} não disponível.`;
   }
-}
+});
 
-// 7. INICIALIZAÇÃO SEGURA E BUSCA
+// INICIALIZAÇÃO
 document.addEventListener("DOMContentLoaded", () => {
   renderizarMusicas(repertorio);
 

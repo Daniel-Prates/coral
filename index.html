@@ -18,28 +18,8 @@
   </header>
 
   <main class="max-w-md mx-auto">
-    <!-- Lista de Músicas (Será preenchida pelo JS) -->
-    <div id="songList" class="space-y-2 mb-6"></div>
-
-    <!-- Roda Genius e Player -->
-    <div id="playerSection" class="hidden flex flex-col items-center">
-      <h2 id="selectedTitle" class="text-xl font-bold mb-4 text-center"></h2>
-
-      <!-- Interface Radial -->
-      <div class="genius-wheel mb-6">
-        <button type="button" class="slice soprano" onclick="playTrack('soprano')">Soprano</button>
-        <button type="button" class="slice contralto" onclick="playTrack('contralto')">Contralto</button>
-        <button type="button" class="slice tenor" onclick="playTrack('tenor')">Tenor</button>
-        <button type="button" class="slice baixo" onclick="playTrack('baixo')">Baixo</button>
-        <button type="button" class="center-circle" onclick="playTrack('playback')">Playback</button>
-      </div>
-
-      <!-- Audio Element Player -->
-      <div class="w-full bg-slate-800 p-4 rounded-lg">
-        <p id="trackLabel" class="text-sm text-slate-400 mb-2 text-center">Selecione um naipe ou playback</p>
-        <audio id="audioPlayer" controls class="w-full"></audio>
-      </div>
-    </div>
+    <!-- Lista de Músicas com Sanfona embutida -->
+    <div id="songList" class="space-y-3 mb-6"></div>
   </main>
 
   <script src="script.js"></script>
