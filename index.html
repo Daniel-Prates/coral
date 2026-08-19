@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Repertório Coral</title>
   <script src="https://cdn.tailwindcss.com"></script>
-
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -21,22 +20,23 @@
   <main class="max-w-md mx-auto">
     <!-- Lista de Músicas -->
     <div id="songList" class="space-y-2 mb-6">
-      <div onclick="selectSong('Graça Excelsa', {soprano:'s.mp3', contralto:'c.mp3', tenor:'t.mp3', baixo:'b.mp3', playback:'p.mp3'})" class="p-4 bg-slate-800 rounded-lg cursor-pointer hover:bg-slate-700">
-        <h3 class="font-semibold">1. Graça Excelsa</h3>
-      </div>
+      <!-- Use botões para garantir suporte a toque no celular -->
+      <button type="button" onclick="selectSong('Graça Excelsa', {soprano:'audios/s.mp3', contralto:'audios/c.mp3', tenor:'audios/t.mp3', baixo:'audios/b.mp3', playback:'audios/p.mp3'})" class="w-full text-left p-4 bg-slate-800 rounded-lg cursor-pointer hover:bg-slate-700 active:bg-slate-600">
+        <h3 class="font-semibold text-white">1. Graça Excelsa</h3>
+      </button>
     </div>
 
     <!-- Roda Genius e Player (Aparece ao selecionar) -->
     <div id="playerSection" class="hidden flex flex-col items-center">
-      <h2 id="selectedTitle" class="text-xl font-bold mb-4"></h2>
+      <h2 id="selectedTitle" class="text-xl font-bold mb-4 text-center"></h2>
 
       <!-- Interface Radial -->
       <div class="genius-wheel mb-6">
-        <div class="slice soprano" onclick="playTrack('soprano')">Soprano</div>
-        <div class="slice contralto" onclick="playTrack('contralto')">Contralto</div>
-        <div class="slice tenor" onclick="playTrack('tenor')">Tenor</div>
-        <div class="slice baixo" onclick="playTrack('baixo')">Baixo</div>
-        <div class="center-circle" onclick="playTrack('playback')">Playback</div>
+        <button type="button" class="slice soprano" onclick="playTrack('soprano')">Soprano</button>
+        <button type="button" class="slice contralto" onclick="playTrack('contralto')">Contralto</button>
+        <button type="button" class="slice tenor" onclick="playTrack('tenor')">Tenor</button>
+        <button type="button" class="slice baixo" onclick="playTrack('baixo')">Baixo</button>
+        <button type="button" class="center-circle" onclick="playTrack('playback')">Playback</button>
       </div>
 
       <!-- Audio Element Player -->
