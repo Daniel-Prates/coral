@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Repertório Coral</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
@@ -18,15 +18,10 @@
   </header>
 
   <main class="max-w-md mx-auto">
-    <!-- Lista de Músicas -->
-    <div id="songList" class="space-y-2 mb-6">
-      <!-- Use botões para garantir suporte a toque no celular -->
-      <button type="button" onclick="selectSong('Graça Excelsa', {soprano:'audios/s.mp3', contralto:'audios/c.mp3', tenor:'audios/t.mp3', baixo:'audios/b.mp3', playback:'audios/p.mp3'})" class="w-full text-left p-4 bg-slate-800 rounded-lg cursor-pointer hover:bg-slate-700 active:bg-slate-600">
-        <h3 class="font-semibold text-white">1. Graça Excelsa</h3>
-      </button>
-    </div>
+    <!-- Lista de Músicas (Será preenchida pelo JS) -->
+    <div id="songList" class="space-y-2 mb-6"></div>
 
-    <!-- Roda Genius e Player (Aparece ao selecionar) -->
+    <!-- Roda Genius e Player -->
     <div id="playerSection" class="hidden flex flex-col items-center">
       <h2 id="selectedTitle" class="text-xl font-bold mb-4 text-center"></h2>
 
