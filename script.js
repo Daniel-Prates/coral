@@ -1,33 +1,66 @@
 // 1. BANCO DE DADOS DAS MÚSICAS
+// Você pode adicionar fora de ordem aqui, o JS vai organizar sozinho!
 const repertorio = [
   {
-    id: 1,
-    titulo: "17. Levem a luz",
+    numero: "18",
+    titulo: "Levem a Luz",
     audios: {
-      soprano: "audios/graca_soprano.mp3",
-      contralto: "audios/graca_contralto.mp3",
-      tenor: "audios/graca_tenor.mp3",
-      baixo: "audios/17_baixo.ogg",
-      playback: "audios/graca_playback.mp3",
+      soprano: "audios/levem_soprano.mp3",
+      contralto: "audios/levem_contralto.mp3",
+      tenor: "audios/levem_tenor.mp3",
+      baixo: "audios/18_levem_a_luz_baixo.ogg",
+      playback: "audios/levem_playback.mp3",
     },
   },
   {
-    id: 2,
-    titulo: "43. Vem reinar",
+    numero: "43",
+    titulo: "Vem Reinar",
+    audios: {
+      soprano: "audios/castelo_b_soprano.mp3",
+      contralto: "audios/castelo_b_contralto.mp3",
+      tenor: "audios/castelo_b_tenor.mp3",
+      baixo: "audios/43_vem_reinar_baixo.ogg",
+      playback: "audios/castelo_b_playback.mp3",
+    },
+  },
+  {
+    numero: "17",
+    titulo: "Vem Brilhar em mim",
     audios: {
       soprano: "audios/castelo_soprano.mp3",
       contralto: "audios/castelo_contralto.mp3",
       tenor: "audios/castelo_tenor.mp3",
-      baixo: "audios/43_baixo.ogg",
+      baixo: "audios/17_vem_brilhar_em_mim_baixo.ogg",
       playback: "audios/castelo_playback.mp3",
+    },
+  },
+  {
+    numero: "37",
+    titulo: "Aleluia a Ti",
+    audios: {
+      soprano: "audios/graca_soprano.mp3",
+      contralto: "audios/graca_contralto.mp3",
+      tenor: "audios/graca_tenor.mp3",
+      baixo: "audios/37_aleluia_a_ti_baixo.ogg",
+      playback: "audios/graca_playback.mp3",
     },
   },
 ];
 
-let currentSongId = null;
+let currentSongNum = null;
 let currentSongData = null;
 
-// 2. FUNÇÃO PARA RENDERIZAR A LISTA (Otimizada para Mobile)
+// 2. FUNÇÃO DE ORDENAÇÃO AUTOMÁTICA (Trata números e subnúmeros como 17b)
+function ordenarRepertorio(lista) {
+  return [...lista].sort((a, b) => {
+    return String(a.numero).localeCompare(String(b.numero), undefined, {
+      numeric: true,
+      sensitivity: "base",
+    });
+  });
+}
+
+// 3. RENDERIZAR A LISTA NA TELA
 function renderizarMusicas(lista) {
   const songList = document.getElementById("songList");
   if (!songList) return;
@@ -40,54 +73,55 @@ function renderizarMusicas(lista) {
     return;
   }
 
-  lista.forEach((musica) => {
+  // Ordena a lista antes de desenhar na tela
+  const listaOrdenada = ordenarRepertorio(lista);
+
+  listaOrdenada.forEach((musica) => {
     const button = document.createElement("button");
     button.type = "button";
-    // Estilos com suporte ativo a toque no celular
     button.className =
       "song-card w-full text-left p-4 bg-slate-800 rounded-lg cursor-pointer hover:bg-slate-700 active:bg-slate-600 transition-colors mb-2";
 
-    // Armazena os dados no elemento
-    button.setAttribute("data-id", musica.id);
+    button.setAttribute("data-numero", musica.numero);
 
-    button.innerHTML = `<h3 class="font-semibold text-white pointer-events-none">${musica.titulo}</h3>`;
+    // Junta o número com o título automaticamente na exibição
+    button.innerHTML = `<h3 class="font-semibold text-white pointer-events-none">${musica.numero}. ${musica.titulo}</h3>`;
     songList.appendChild(button);
   });
 }
 
-// 3. DELEGAÇÃO DE EVENTO GLOBAL (Atende toque e clique)
+// 4. DELEGAÇÃO DE EVENTO GLOBAL (Suporte Mobile)
 document.addEventListener("click", function (event) {
   const songCard = event.target.closest(".song-card");
   if (!songCard) return;
 
-  const id = Number(songCard.getAttribute("data-id"));
-  const musica = repertorio.find((m) => m.id === id);
+  const numero = songCard.getAttribute("data-numero");
+  const musica = repertorio.find((m) => String(m.numero) === String(numero));
 
   if (musica) {
     togglePlayer(musica);
   }
 });
 
-// 4. LÓGICA DE ABRIR/RECOLHER (TOGGLE)
+// 5. LÓGICA DE ABRIR/RECOLHER (TOGGLE)
 function togglePlayer(musica) {
   const playerSection = document.getElementById("playerSection");
   const audio = document.getElementById("audioPlayer");
 
-  // Se clicar na MESMA música: recolhe e limpa
-  if (currentSongId === musica.id) {
+  if (currentSongNum === musica.numero) {
     audio.pause();
     audio.src = "";
     playerSection.classList.add("hidden");
-    currentSongId = null;
+    currentSongNum = null;
     currentSongData = null;
     return;
   }
 
-  // Se clicar em uma NOVA música: abre
-  currentSongId = musica.id;
+  currentSongNum = musica.numero;
   currentSongData = musica.audios;
 
-  document.getElementById("selectedTitle").innerText = musica.titulo;
+  document.getElementById("selectedTitle").innerText =
+    `${musica.numero}. ${musica.titulo}`;
   document.getElementById("trackLabel").innerText =
     "Selecione um naipe ou playback";
 
@@ -97,7 +131,7 @@ function togglePlayer(musica) {
   playerSection.classList.remove("hidden");
 }
 
-// 5. TOCAR FAIXA SELECIONADA
+// 6. TOCAR FAIXA SELECIONADA
 function playTrack(type) {
   if (!currentSongData) return;
   const audio = document.getElementById("audioPlayer");
@@ -120,7 +154,7 @@ function playTrack(type) {
   }
 }
 
-// 6. INICIALIZAÇÃO SEGURA AO CARREGAR A PÁGINA
+// 7. INICIALIZAÇÃO SEGURA E BUSCA
 document.addEventListener("DOMContentLoaded", () => {
   renderizarMusicas(repertorio);
 
@@ -128,8 +162,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (searchInput) {
     searchInput.addEventListener("input", (e) => {
       const termo = e.target.value.toLowerCase();
-      const filtradas = repertorio.filter((musica) =>
-        musica.titulo.toLowerCase().includes(termo),
+      const filtradas = repertorio.filter(
+        (musica) =>
+          musica.titulo.toLowerCase().includes(termo) ||
+          String(musica.numero).toLowerCase().includes(termo),
       );
       renderizarMusicas(filtradas);
     });
