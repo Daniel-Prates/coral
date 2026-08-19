@@ -18,7 +18,7 @@ const repertorio = [
       soprano: "audios/castelo_soprano.mp3",
       contralto: "audios/castelo_contralto.mp3",
       tenor: "audios/castelo_tenor.mp3",
-      baixo: "audios/43.ogg",
+      baixo: "audios/43_baixo.ogg",
       playback: "audios/castelo_playback.mp3",
     },
   },
