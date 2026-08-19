@@ -1,5 +1,4 @@
 // 1. BANCO DE DADOS DAS MÚSICAS
-// Para adicionar novas músicas, basta adicionar um novo bloco aqui!
 const repertorio = [
   {
     id: 1,
@@ -23,25 +22,16 @@ const repertorio = [
       playback: "audios/castelo_playback.mp3",
     },
   },
-  {
-    id: 3,
-    titulo: "3. Via Dolorosa",
-    audios: {
-      soprano: "audios/via_soprano.mp3",
-      contralto: "audios/via_contralto.mp3",
-      tenor: "audios/via_tenor.mp3",
-      baixo: "audios/via_baixo.mp3",
-      playback: "audios/via_playback.mp3",
-    },
-  },
 ];
 
 let currentSongId = null;
 let currentSongData = null;
 
-// 2. FUNÇÃO QUE RENDERIZA A LISTA NA TELA AUTOMATICAMENTE
+// 2. FUNÇÃO PARA RENDERIZAR A LISTA (Otimizada para Mobile)
 function renderizarMusicas(lista) {
   const songList = document.getElementById("songList");
+  if (!songList) return;
+
   songList.innerHTML = "";
 
   if (lista.length === 0) {
@@ -53,23 +43,37 @@ function renderizarMusicas(lista) {
   lista.forEach((musica) => {
     const button = document.createElement("button");
     button.type = "button";
+    // Estilos com suporte ativo a toque no celular
     button.className =
-      "song-card w-full text-left p-4 bg-slate-800 rounded-lg cursor-pointer hover:bg-slate-700 active:bg-slate-600 transition-colors";
+      "song-card w-full text-left p-4 bg-slate-800 rounded-lg cursor-pointer hover:bg-slate-700 active:bg-slate-600 transition-colors mb-2";
 
-    // Passa o ID da música ao clicar
-    button.onclick = () => togglePlayer(musica);
+    // Armazena os dados no elemento
+    button.setAttribute("data-id", musica.id);
 
     button.innerHTML = `<h3 class="font-semibold text-white pointer-events-none">${musica.titulo}</h3>`;
     songList.appendChild(button);
   });
 }
 
-// 3. LÓGICA DE ABRIR/RECOLHER (TOGGLE)
+// 3. DELEGAÇÃO DE EVENTO GLOBAL (Atende toque e clique)
+document.addEventListener("click", function (event) {
+  const songCard = event.target.closest(".song-card");
+  if (!songCard) return;
+
+  const id = Number(songCard.getAttribute("data-id"));
+  const musica = repertorio.find((m) => m.id === id);
+
+  if (musica) {
+    togglePlayer(musica);
+  }
+});
+
+// 4. LÓGICA DE ABRIR/RECOLHER (TOGGLE)
 function togglePlayer(musica) {
   const playerSection = document.getElementById("playerSection");
   const audio = document.getElementById("audioPlayer");
 
-  // Se clicar na MESMA música: recolhe
+  // Se clicar na MESMA música: recolhe e limpa
   if (currentSongId === musica.id) {
     audio.pause();
     audio.src = "";
@@ -93,7 +97,7 @@ function togglePlayer(musica) {
   playerSection.classList.remove("hidden");
 }
 
-// 4. TOCAR FAIXA SELECIONADA
+// 5. TOCAR FAIXA SELECIONADA
 function playTrack(type) {
   if (!currentSongData) return;
   const audio = document.getElementById("audioPlayer");
@@ -116,14 +120,18 @@ function playTrack(type) {
   }
 }
 
-// 5. SISTEMA DE BUSCA EM TEMPO REAL
-document.getElementById("searchInput").addEventListener("input", (e) => {
-  const termo = e.target.value.toLowerCase();
-  const filtradas = repertorio.filter((musica) =>
-    musica.titulo.toLowerCase().includes(termo),
-  );
-  renderizarMusicas(filtradas);
-});
+// 6. INICIALIZAÇÃO SEGURA AO CARREGAR A PÁGINA
+document.addEventListener("DOMContentLoaded", () => {
+  renderizarMusicas(repertorio);
 
-// Inicializa a lista assim que abre o site
-renderizarMusicas(repertorio);
+  const searchInput = document.getElementById("searchInput");
+  if (searchInput) {
+    searchInput.addEventListener("input", (e) => {
+      const termo = e.target.value.toLowerCase();
+      const filtradas = repertorio.filter((musica) =>
+        musica.titulo.toLowerCase().includes(termo),
+      );
+      renderizarMusicas(filtradas);
+    });
+  }
+});
