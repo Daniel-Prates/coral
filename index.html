@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repertório Coral</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-slate-900 text-slate-100 min-h-screen p-4">
+
+  <!-- Header com Busca -->
+  <header class="max-w-md mx-auto mb-6">
+    <h1 class="text-2xl font-bold text-center mb-4">Repertório do Coral</h1>
+    <input type="text" id="searchInput" placeholder="Buscar música..." class="w-full p-3 rounded-lg bg-slate-800 border border-slate-700 text-white focus:outline-none focus:border-indigo-500">
+  </header>
+
+  <main class="max-w-md mx-auto">
+    <!-- Lista de Músicas -->
+    <div id="songList" class="space-y-2 mb-6">
+      <div onclick="selectSong('Graça Excelsa', {soprano:'s.mp3', contralto:'c.mp3', tenor:'t.mp3', baixo:'b.mp3', playback:'p.mp3'})" class="p-4 bg-slate-800 rounded-lg cursor-pointer hover:bg-slate-700">
+        <h3 class="font-semibold">Graça Excelsa</h3>
+      </div>
+    </div>
+
+    <!-- Roda Genius e Player (Aparece ao selecionar) -->
+    <div id="playerSection" class="hidden flex flex-col items-center">
+      <h2 id="selectedTitle" class="text-xl font-bold mb-4"></h2>
+
+      <!-- Interface Radial -->
+      <div class="genius-wheel mb-6">
+        <div class="slice soprano" onclick="playTrack('soprano')">Soprano</div>
+        <div class="slice contralto" onclick="playTrack('contralto')">Contralto</div>
+        <div class="slice tenor" onclick="playTrack('tenor')">Tenor</div>
+        <div class="slice baixo" onclick="playTrack('baixo')">Baixo</div>
+        <div class="center-circle" onclick="playTrack('playback')">Playback</div>
+      </div>
+
+      <!-- Audio Element Player -->
+      <div class="w-full bg-slate-800 p-4 rounded-lg">
+        <p id="trackLabel" class="text-sm text-slate-400 mb-2 text-center">Selecione um naipe ou playback</p>
+        <audio id="audioPlayer" controls class="w-full"></audio>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    let currentSongData = null;
+
+    function selectSong(title, tracks) {
+      currentSongData = tracks;
+      document.getElementById('selectedTitle').innerText = title;
+      document.getElementById('playerSection').classList.remove('hidden');
+    }
+
+    function playTrack(type) {
+      if (!currentSongData) return;
+      const audio = document.getElementById('audioPlayer');
+      const label = document.getElementById('trackLabel');
+
+      label.innerText = `Tocando: ${type.toUpperCase()}`;
+      audio.src = currentSongData[type];
+      audio.play();
+    }
+  </script>
+</body>
+
+</html>
