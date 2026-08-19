@@ -1,53 +1,23 @@
-// BANCO DE DADOS DAS MÚSICAS
-const repertorio = [
-  {
-    numero: "17",
-    titulo: "Vem Brilhar Jesus",
-    audios: {
-      soprano: "audios/graca_soprano.mp3",
-      contralto: "audios/graca_contralto.mp3",
-      tenor: "audios/graca_tenor.mp3",
-      baixo: "audios/17_vem_brilhar_em_mim_baixo.ogg",
-      playback: "audios/graca_playback.mp3",
-    },
-  },
-  {
-    numero: "18",
-    titulo: "Levem a Luz",
-    audios: {
-      soprano: "audios/castelo_soprano.mp3",
-      contralto: "audios/castelo_contralto.mp3",
-      tenor: "audios/castelo_tenor.mp3",
-      baixo: "audios/18_levem_a_luz_baixo.ogg",
-      playback: "audios/castelo_playback.mp3",
-    },
-  },
-  {
-    numero: "37",
-    titulo: "Aleluia a ti",
-    audios: {
-      soprano: "audios/levem_soprano.mp3",
-      contralto: "audios/levem_contralto.mp3",
-      tenor: "audios/levem_tenor.mp3",
-      baixo: "audios/37_aleluia_a_ti_baixo.ogg",
-      playback: "audios/levem_playback.mp3",
-    },
-  },
-  {
-    numero: "43",
-    titulo: "Vem reinar",
-    audios: {
-      soprano: "audios/levem_soprano.mp3",
-      contralto: "audios/levem_contralto.mp3",
-      tenor: "audios/levem_tenor.mp3",
-      baixo: "audios/43_vem_reinar_baixo.ogg",
-      playback: "audios/levem_playback.mp3",
-    },
-  },
-];
-
+let repertorio = [];
 let musicaAbertaNumero = null;
 let audioAtual = null;
+
+// FUNÇÃO PARA BUSCAR O REPERTÓRIO DO ARQUIVO JSON
+async function carregarRepertorio() {
+  try {
+    const resposta = await fetch("repertorio.json");
+    if (!resposta.ok) throw new Error("Erro ao carregar o arquivo JSON");
+    repertorio = await resposta.json();
+    renderizarMusicas(repertorio);
+  } catch (erro) {
+    console.error("Erro:", erro);
+    const songList = document.getElementById("songList");
+    if (songList) {
+      songList.innerHTML =
+        '<p class="text-center text-red-400 py-4">Erro ao carregar as músicas.</p>';
+    }
+  }
+}
 
 // ORDENAÇÃO AUTOMÁTICA
 function ordenarRepertorio(lista) {
@@ -79,7 +49,6 @@ function renderizarMusicas(lista) {
     itemContainer.className =
       "bg-slate-800 rounded-xl overflow-hidden border border-slate-700/50 shadow-md";
 
-    // Botão da Música
     const isAberta = musicaAbertaNumero === musica.numero;
 
     itemContainer.innerHTML = `
@@ -122,20 +91,17 @@ document.addEventListener("click", function (event) {
   if (songCard) {
     const numero = songCard.getAttribute("data-numero");
 
-    // Se clicar na mesma que está aberta: fecha
     if (musicaAbertaNumero === numero) {
       musicaAbertaNumero = null;
     } else {
       musicaAbertaNumero = numero;
     }
 
-    // Para qualquer som tocando
     if (audioAtual) {
       audioAtual.pause();
       audioAtual.src = "";
     }
 
-    // Re-desenha mantendo o estado correto
     const termo =
       document.getElementById("searchInput")?.value.toLowerCase() || "";
     const filtradas = repertorio.filter(
@@ -175,7 +141,7 @@ document.addEventListener("click", function (event) {
 
 // INICIALIZAÇÃO
 document.addEventListener("DOMContentLoaded", () => {
-  renderizarMusicas(repertorio);
+  carregarRepertorio();
 
   const searchInput = document.getElementById("searchInput");
   if (searchInput) {

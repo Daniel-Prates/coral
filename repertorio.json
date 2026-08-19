@@ -1,0 +1,46 @@
+[
+  {
+    "numero": "17",
+    "titulo": "Vem Brilhar Jesus",
+    "audios": {
+      "soprano": "audios/graca_soprano.mp3",
+      "contralto": "audios/graca_contralto.mp3",
+      "tenor": "audios/graca_tenor.mp3",
+      "baixo": "audios/17_vem_brilhar_em_mim_baixo.ogg",
+      "playback": "audios/graca_playback.mp3"
+    }
+  },
+  {
+    "numero": "18",
+    "titulo": "Levem a Luz",
+    "audios": {
+      "soprano": "audios/castelo_soprano.mp3",
+      "contralto": "audios/castelo_contralto.mp3",
+      "tenor": "audios/castelo_tenor.mp3",
+      "baixo": "audios/18_levem_a_luz_baixo.ogg",
+      "playback": "audios/castelo_playback.mp3"
+    }
+  },
+  {
+    "numero": "37",
+    "titulo": "Aleluia a ti",
+    "audios": {
+      "soprano": "audios/levem_soprano.mp3",
+      "contralto": "audios/levem_contralto.mp3",
+      "tenor": "audios/levem_tenor.mp3",
+      "baixo": "audios/37_aleluia_a_ti_baixo.ogg",
+      "playback": "audios/levem_playback.mp3"
+    }
+  },
+  {
+    "numero": "43",
+    "titulo": "Vem reinar",
+    "audios": {
+      "soprano": "audios/levem_soprano.mp3",
+      "contralto": "audios/levem_contralto.mp3",
+      "tenor": "audios/levem_tenor.mp3",
+      "baixo": "audios/43_vem_reinar_baixo.ogg",
+      "playback": "audios/levem_playback.mp3"
+    }
+  }
+]
