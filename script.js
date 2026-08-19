@@ -2,23 +2,23 @@
 const repertorio = [
   {
     id: 1,
-    titulo: "1. Graça Excelsa",
+    titulo: "17. Levem a luz",
     audios: {
       soprano: "audios/graca_soprano.mp3",
       contralto: "audios/graca_contralto.mp3",
       tenor: "audios/graca_tenor.mp3",
-      baixo: "audios/graca_baixo.mp3",
+      baixo: "audios/17_baixo.ogg",
       playback: "audios/graca_playback.mp3",
     },
   },
   {
     id: 2,
-    titulo: "2. Castelo Forte",
+    titulo: "43. Vem reinar",
     audios: {
       soprano: "audios/castelo_soprano.mp3",
       contralto: "audios/castelo_contralto.mp3",
       tenor: "audios/castelo_tenor.mp3",
-      baixo: "audios/castelo_baixo.mp3",
+      baixo: "audios/43.ogg",
       playback: "audios/castelo_playback.mp3",
     },
   },
