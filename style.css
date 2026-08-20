@@ -40,22 +40,22 @@
 .soprano {
   top: 0;
   left: 0;
-  background-color: #ef4444;
+  background-color: #7e3653;
 } /* Superior Esquerdo */
 .contralto {
   top: 0;
   right: 0;
-  background-color: #3b82f6;
+  background-color: #364573;
 } /* Superior Direito */
 .tenor {
   bottom: 0;
   left: 0;
-  background-color: #eab308;
+  background-color: #e8a33d;
 } /* Inferior Esquerdo */
 .baixo {
   bottom: 0;
   right: 0;
-  background-color: #22c55e;
+  background-color: #27464b;
 } /* Inferior Direito */
 
 /* Círculo Central */
