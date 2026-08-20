@@ -1,16 +1,16 @@
 [
-    {
+  {
     "numero": "01",
     "titulo": "Musica1",
     "audios": {
-      "soprano": "audios/graca_soprano.mp3",
-      "contralto": "audios/graca_contralto.mp3",
-      "tenor": "audios/graca_tenor.mp3",
+      "soprano": "audios/17_vem_brilhar_em_mim_baixo.ogg",
+      "contralto": "audios/17_vem_brilhar_em_mim_baixo.ogg",
+      "tenor": "audios/17_vem_brilhar_em_mim_baixo.ogg",
       "baixo": "audios/17_vem_brilhar_em_mim_baixo.ogg",
-      "playback": "audios/graca_playback.mp3"
+      "playback": "audios/17_vem_brilhar_em_mim_baixo.ogg"
     }
   },
-    {
+  {
     "numero": "02",
     "titulo": "Musica2",
     "audios": {
@@ -21,7 +21,7 @@
       "playback": "audios/graca_playback.mp3"
     }
   },
-    {
+  {
     "numero": "03",
     "titulo": "Musica3",
     "audios": {
@@ -32,7 +32,7 @@
       "playback": "audios/graca_playback.mp3"
     }
   },
-    {
+  {
     "numero": "04",
     "titulo": "Musca4",
     "audios": {
