@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Italianno&family=Pacifico&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Italianno&family=Pacifico&family=Satisfy&family=Sofia&display=swap");
 
 /* Estilização da Roda Genius (Otimizada para Telas Pequenas) */
 .genius-wheel {
@@ -90,7 +90,7 @@
 /*Título do Coral*/
 .titulo {
   font-size: 4.1rem;
-  font-family: "Italianno", cursive;
+  font-family: "Sofia", cursive;
   font-weight: 400;
   font-style: normal;
   text-decoration: underline;
