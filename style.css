@@ -93,7 +93,7 @@
   font-family: "Homemade Apple", cursive;
   font-weight: 400;
   font-style: normal;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   color: #b591e4;
   margin-bottom: 50px !important;
 }
