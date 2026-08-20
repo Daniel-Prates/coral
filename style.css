@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Italianno&family=Pacifico&family=Satisfy&display=swap");
+
 /* Estilização da Roda Genius (Otimizada para Telas Pequenas) */
 .genius-wheel {
   position: relative;
@@ -83,4 +85,27 @@
 /* Feedback de toque para o centro */
 .center-circle:active {
   background-color: #1e293b;
+}
+
+/*Título do Coral*/
+.titulo {
+  font-size: 3.1rem;
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: underline;
+  color: #e2e8f0;
+  margin-bottom: 50px;
+}
+.search-container {
+  position: relative;
+  width: 100%;
+}
+.search-icon {
+  position: absolute;
+  top: 20%;
+  left: 14px;
+  transform: translatey(50%);
+  color: #64748b;
+  pointer-events: none;
 }
