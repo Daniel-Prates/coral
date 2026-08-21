@@ -3,9 +3,9 @@
     "numero": "13",
     "titulo": "Toma meu coração",
     "audios": {
-      "soprano": "audios/graca_soprano.mp3",
-      "contralto": "audios/graca_contralto.mp3",
-      "tenor": "audios/graca_tenor.mp3",
+      "soprano": "audios/16_asas da alva_soprano.opus",
+      "contralto": "audios/16_asas da alva_contralto.opus",
+      "tenor": "audios/16_asas da alva_tenor.opus",
       "baixo": "audios/17_vem_brilhar_em_mim_baixo.ogg",
       "playback": "audios/graca_playback.mp3"
     }
@@ -17,7 +17,7 @@
       "soprano": "audios/graca_soprano.mp3",
       "contralto": "audios/graca_contralto.mp3",
       "tenor": "audios/graca_tenor.mp3",
-      "baixo": "audios/17_vem_brilhar_em_mim_baixo.ogg",
+      "baixo": "audios/16_asas da alva_baixo.opus",
       "playback": "audios/graca_playback.mp3"
     }
   },
