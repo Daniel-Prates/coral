@@ -4,16 +4,16 @@ let audioAtual = null;
 
 // Dicionário com as cores de cada naipe
 const coresNaipes = {
-soprano: '#3d1c2a',   
-  contralto: '#1c243b', 
-  tenor: '#593d18',    
-  baixo: '#142427',     
-  playback: '#0f172a'   
+  soprano: "#3d1c2a",
+  contralto: "#1c243b",
+  tenor: "#593d18",
+  baixo: "#142427",
+  playback: "#0f172a",
 };
 
 // Função para mudar a cor do fundo
 function mudarCorFundo(naipe) {
-  const cor = coresNaipes[naipe] || '#0f172a';
+  const cor = coresNaipes[naipe] || "#0f172a";
   document.body.style.backgroundColor = cor;
 }
 
@@ -89,7 +89,7 @@ function renderizarMusicas(lista) {
         <!-- Audio Player -->
         <div class="w-full mt-2">
           <p class="track-label text-xs text-slate-400 mb-2 text-center">Selecione uma voz ou playback</p>
-          <audio class="audio-player w-full" controls preload="none"></audio>
+          <audio class="audio-player w-full" controls preload="metadata"></audio>
         </div>
 
       </div>
@@ -108,7 +108,7 @@ document.addEventListener("click", function (event) {
 
     if (musicaAbertaNumero === numero) {
       musicaAbertaNumero = null;
-      mudarCorFundo('default'); // Reseta a cor ao fechar o card
+      mudarCorFundo("default"); // Reseta a cor ao fechar o card
     } else {
       musicaAbertaNumero = numero;
     }
