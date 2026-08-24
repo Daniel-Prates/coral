@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Italianno&family=Pacifico&family=Satisfy&family=Sofia&display=swap");
+body {
+  transition: background-color 1s ease !important;
+}
 
 /* Estilização da Roda Genius (Otimizada para Telas Pequenas) */
 .genius-wheel {

@@ -2,6 +2,21 @@ let repertorio = [];
 let musicaAbertaNumero = null;
 let audioAtual = null;
 
+// Dicionário com as cores de cada naipe
+const coresNaipes = {
+  soprano: '#ef4444',
+  contralto: '#3b82f6',
+  tenor: '#eab308',
+  baixo: '#22c55e',
+  playback: '#0f172a' // Volta ao fundo escuro padrão
+};
+
+// Função para mudar a cor do fundo
+function mudarCorFundo(naipe) {
+  const cor = coresNaipes[naipe] || '#0f172a';
+  document.body.style.backgroundColor = cor;
+}
+
 // FUNÇÃO PARA BUSCAR O REPERTÓRIO DO ARQUIVO JSON
 async function carregarRepertorio() {
   try {
@@ -74,7 +89,7 @@ function renderizarMusicas(lista) {
         <!-- Audio Player -->
         <div class="w-full mt-2">
           <p class="track-label text-xs text-slate-400 mb-2 text-center">Selecione uma voz ou playback</p>
-          <audio class="audio-player w-full" controls></audio>
+          <audio class="audio-player w-full" controls preload="none"></audio>
         </div>
 
       </div>
@@ -93,6 +108,7 @@ document.addEventListener("click", function (event) {
 
     if (musicaAbertaNumero === numero) {
       musicaAbertaNumero = null;
+      mudarCorFundo('default'); // Reseta a cor ao fechar o card
     } else {
       musicaAbertaNumero = numero;
     }
@@ -119,6 +135,9 @@ document.addEventListener("click", function (event) {
     const naipe = sliceBtn.getAttribute("data-naipe");
     const numero = sliceBtn.getAttribute("data-numero");
     const musica = repertorio.find((m) => String(m.numero) === String(numero));
+
+    // Altera a cor de fundo para o naipe clicado
+    mudarCorFundo(naipe);
 
     if (!musica || !musica.audios[naipe]) return;
 
