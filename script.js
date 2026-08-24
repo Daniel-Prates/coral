@@ -5,9 +5,9 @@ let audioAtual = null;
 // Dicionário com as cores de cada naipe
 const coresNaipes = {
   soprano: "#3d1c2a",
-  contralto: "#1c243b",
+  contralto: "#2c395e",
   tenor: "#593d18",
-  baixo: "#142427",
+  baixo: "#27575f",
   playback: "#0f172a",
 };
 
