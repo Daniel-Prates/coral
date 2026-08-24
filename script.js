@@ -74,7 +74,7 @@ function renderizarMusicas(lista) {
         <!-- Audio Player -->
         <div class="w-full mt-2">
           <p class="track-label text-xs text-slate-400 mb-2 text-center">Selecione uma voz ou playback</p>
-          <audio class="audio-player w-full" controls preload="none"></audio>
+          <audio class="audio-player w-full" controls></audio>
         </div>
 
       </div>
