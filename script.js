@@ -4,11 +4,11 @@ let audioAtual = null;
 
 // Dicionário com as cores de cada naipe
 const coresNaipes = {
-  soprano: '#ef4444',
-  contralto: '#3b82f6',
-  tenor: '#eab308',
-  baixo: '#22c55e',
-  playback: '#0f172a' // Volta ao fundo escuro padrão
+soprano: '#3d1c2a',   
+  contralto: '#1c243b', 
+  tenor: '#593d18',    
+  baixo: '#142427',     
+  playback: '#0f172a'   
 };
 
 // Função para mudar a cor do fundo
