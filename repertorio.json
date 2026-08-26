@@ -3,22 +3,22 @@
     "numero": "13",
     "titulo": "Toma meu coração",
     "audios": {
-      "soprano": "audios/16_asas da_soprano.opus",
-      "contralto": "audios/alva_contralto.opus",
-      "tenor": "audios/16_asas da alv_tenor.opus",
-      "baixo": "audios/17_vem_brilh_em_mim_baixo.ogg",
-      "playback": "audios/graca_plyback.mp3"
+      "soprano": "audios/",
+      "contralto": "audios/",
+      "tenor": "audios/",
+      "baixo": "audios/.ogg",
+      "playback": "audios/"
     }
   },
   {
     "numero": "16",
     "titulo": "Asas da Alva",
     "audios": {
-      "soprano": "audios/16_asas da alva_soprano.opus",
-      "contralto": "audios/16_asas da alva_contralto.opus",
-      "tenor": "audios/16_asas da alva_tenor.opus",
-      "baixo": "audios/16_asas da alva_baixo.opus",
-      "playback": "audios/16_asas da alva_playback.opus"
+      "soprano": "audios/16_asas_da_alva_soprano.opus",
+      "contralto": "audios/16_asas_da_alva_contralto.opus",
+      "tenor": "audios/16_asas_da_alva_tenor.opus",
+      "baixo": "audios/16_asas_da_alva_baixo.opus",
+      "playback": "audios/16_asas_da_alva.ogg"
     }
   },
   {
