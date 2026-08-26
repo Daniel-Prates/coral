@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Italianno&family=Pacifico&family=Satisfy&family=Sofia&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Homemade+Apple&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 body {
   transition: background-color 1s ease !important;
 }
@@ -93,11 +93,11 @@ body {
 /*Título do Coral*/
 .titulo {
   font-size: 34px;
-  font-family: "Homemade Apple", cursive;
-  font-weight: 400;
+  font-family: "Cinzel Decorative", cursive;
+  font-weight: 500;
   font-style: normal;
   /*text-decoration: underline;*/
-  color: #b591e4;
+  color: #8242d5;
   margin-bottom: 50px !important;
 }
 .search-container {
