@@ -83,12 +83,12 @@ function renderizarMusicas(lista) {
           <button type="button" class="slice contralto" data-naipe="contralto" data-numero="${musica.numero}">Contralto</button>
           <button type="button" class="slice tenor" data-naipe="tenor" data-numero="${musica.numero}">Tenor</button>
           <button type="button" class="slice baixo" data-naipe="baixo" data-numero="${musica.numero}">Baixo</button>
-          <button type="button" class="center-circle" data-naipe="playback" data-numero="${musica.numero}">Demonstração</button>
+          <button type="button" class="center-circle" data-naipe="demonstração" data-numero="${musica.numero}">Demonstração</button>
         </div>
 
         <!-- Audio Player -->
         <div class="w-full mt-2">
-          <p class="track-label text-xs text-slate-400 mb-2 text-center">Selecione uma voz ou playback</p>
+          <p class="track-label text-xs text-slate-400 mb-2 text-center">Selecione uma voz ou demonstração</p>
           <audio class="audio-player w-full" controls preload="metadata"></audio>
         </div>
 
