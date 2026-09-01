@@ -1,16 +1,5 @@
 [
   {
-    "numero": "13",
-    "titulo": "Toma meu coração",
-    "audios": {
-      "soprano": "audios/",
-      "contralto": "audios/",
-      "tenor": "audios/",
-      "baixo": "audios/.ogg",
-      "demonstração": "audios/"
-    }
-  },
-  {
     "numero": "16",
     "titulo": "Asas da Alva",
     "audios": {
@@ -23,156 +12,69 @@
   },
   {
     "numero": "17",
-    "titulo": "Vem brilhar Jesus",
+    "titulo": "Vem brilhar em mim",
     "audios": {
-      "soprano": "audios/graca_soprano.mp3",
-      "contralto": "audios/graca_contralto.mp3",
-      "tenor": "audios/graca_tenor.mp3",
+      "soprano": "audios/17_vem_brilhar_em_mim_soprano.ogg",
+      "contralto": "audios/17_vem_brilhar_em_mim_contralto.ogg",
+      "tenor": "audios/17_vem_brilhar_em_mim_tenor.ogg",
       "baixo": "audios/17_vem_brilhar_em_mim_baixo.ogg",
-      "demonstração": "audios/graca_demonstração.mp3"
+      "demonstração": "audios/17_vem_brilhar_em_mim_baixo.ogg"
     }
   },
   {
     "numero": "18",
     "titulo": "Levem a Luz",
     "audios": {
-      "soprano": "audios/castelo_soprano.mp3",
-      "contralto": "audios/castelo_contralto.mp3",
-      "tenor": "audios/castelo_tenor.mp3",
+      "soprano": "audios/18_levem_a_luz_soprano.ogg",
+      "contralto": "audios/18_levem_a_luz_contralto.ogg",
+      "tenor": "audios/18_levem_a_luz_tenor.ogg",
       "baixo": "audios/18_levem_a_luz_baixo.ogg",
-      "demonstração": "audios/castelo_demonstração.mp3"
+      "demonstração": "audios/18_levem_a_luz.ogg"
     }
   },
   {
     "numero": "22",
     "titulo": "Glória",
     "audios": {
-      "soprano": "audios/levem_soprano.mp3",
-      "contralto": "audios/levem_contralto.mp3",
-      "tenor": "audios/levem_tenor.mp3",
-      "baixo": "audios/43_vem_reinar_baixo.ogg",
-      "demonstração": "audios/levem_demonstração.mp3"
-    }
-  },
-  {
-    "numero": "27",
-    "titulo": "Shalom",
-    "audios": {
-      "soprano": "audios/17_vem_brilhar_em_mim_baixo.ogg",
-      "contralto": "audios/17_vem_brilhar_em_mim_baixo.ogg",
-      "tenor": "audios/17_vem_brilhar_em_mim_baixo.ogg",
-      "baixo": "audios/17_vem_brilhar_em_mim_baixo.ogg",
-      "demonstração": "audios/17_vem_brilhar_em_mim_baixo.ogg"
-    }
-  },
-  {
-    "numero": "29",
-    "titulo": "Corações corajosos",
-    "audios": {
-      "soprano": "audios/graca_soprano.mp3",
-      "contralto": "audios/graca_contralto.mp3",
-      "tenor": "audios/graca_tenor.mp3",
-      "baixo": "audios/17_vem_brilhar_em_mim_baixo.ogg",
-      "demonstração": "audios/graca_demonstração.mp3"
-    }
-  },
-  {
-    "numero": "36",
-    "titulo": "Se mais eu pudesse",
-    "audios": {
-      "soprano": "audios/levem_soprano.mp3",
-      "contralto": "audios/levem_contralto.mp3",
-      "tenor": "audios/levem_tenor.mp3",
-      "baixo": "audios/37_aleluia_a_ti_baidxo.ogg",
-      "demonstração": "audios/levem_demonstração.mp3"
+      "soprano": "audios/22_gloria_soprano.ogg",
+      "contralto": "audios/22_gloria_contralto.ogg",
+      "tenor": "audios/22_gloria_tenor.ogg",
+      "baixo": "audios/22_gloria_baixo.ogg",
+      "demonstração": "audios/22_gloria_soprano.ogg"
     }
   },
   {
     "numero": "37",
     "titulo": "Aleluia a Ti",
     "audios": {
-      "soprano": "audios/levem_soprano.mp3",
-      "contralto": "audios/levem_contralto.mp3",
-      "tenor": "audios/levem_tenor.mp3",
-      "baixo": "audios/37_aleluia_a_ti_baidxo.ogg",
-      "demonstração": "audios/levem_demonstração.mp3"
+      "soprano": "audios/37_aleluia_a_ti_soprano.ogg",
+      "contralto": "audios/37_aleluia_a_ti_contralto.ogg",
+      "tenor": "audios/37_aleluia_a_ti_tenor.ogg",
+      "baixo": "audios/37_aleluia_a_ti_baixo.ogg",
+      "demonstração": "audios/37_aleluia_a_ti.ogg"
     }
   },
-  {
-    "numero": "39",
-    "titulo": "Eu te louvo ó Deus",
-    "audios": {
-      "soprano": "audios/levem_soprano.mp3",
-      "contralto": "audios/levem_contralto.mp3",
-      "tenor": "audios/levem_tenor.mp3",
-      "baixo": "audios/37_aleluia_a_ti_baixdo.ogg",
-      "demonstração": "audios/levem_demonstração.mp3"
-    }
-  },
-  {
-    "numero": "41",
-    "titulo": "Com muito louvor",
-    "audios": {
-      "soprano": "audios/graca_soprano.mp3",
-      "contralto": "audios/graca_contralto.mp3",
-      "tenor": "audios/graca_tenor.mp3",
-      "baixo": "audios/17_vem_brilhar_em_mim_baixo.ogg",
-      "demonstração": "audios/graca_demonstração.mp3"
-    }
-  },
-  {
-    "numero": "42",
-    "titulo": "Deus Tú és Santo",
-    "audios": {
-      "soprano": "audios/graca_soprano.mp3",
-      "contralto": "audios/graca_contralto.mp3",
-      "tenor": "audios/graca_tenor.mp3",
-      "baixo": "audios/17_vem_brilhar_em_mim_baixo.ogg",
-      "demonstração": "audios/graca_demonstração.mp3"
-    }
-  },
-  {
-    "numero": "43",
-    "titulo": "Um milagre Senhor",
-    "audios": {
-      "soprano": "audios/levem_soprano.mp3",
-      "contralto": "audios/levem_contralto.mp3",
-      "tenor": "audios/levem_tenor.mp3",
-      "baixo": "audios/43_vem_reinar_baixo.ogg",
-      "demonstração": "audios/levem_demonstração.mp3"
-    }
-  },
-  {
-    "numero": "44",
-    "titulo": "Que grande amor",
-    "audios": {
-      "soprano": "audios/levem_soprano.mp3",
-      "contralto": "audios/levem_contralto.mp3",
-      "tenor": "audios/levem_tenor.mp3",
-      "baixo": "audios/43_vem_reinar_baixo.ogg",
-      "demonstração": "audios/levem_demonstração.mp3"
-    }
-  },
+
   {
     "numero": "45",
     "titulo": "Rei de amor",
     "audios": {
-      "soprano": "audios/levem_soprano.mp3",
-      "contralto": "audios/levem_contralto.mp3",
-      "tenor": "audios/levem_tenor.mp3",
-      "baixo": "audios/43_vem_reinar_baixo.ogg",
-      "demonstração": "audios/levem_demonstração.mp3"
+      "soprano": "audios/45_rei_de_amor_soprano.ogg",
+      "contralto": "audios/45_rei_de_amor_contralto.ogg",
+      "tenor": "audios/45_rei_de_amor_tenor.ogg",
+      "baixo": "audios/45_rei_de_amor_baixo.ogg",
+      "demonstração": "audios/45_rei_de_amor.ogg"
     }
   },
   {
     "numero": "46",
     "titulo": "Vem reinar",
     "audios": {
-      "soprano": "audios/levem_soprano.mp3",
-      "contralto": "audios/levem_contralto.mp3",
-      "tenor": "audios/levem_tenor.mp3",
-      "baixo": "audios/43_vem_reinar_baixo.ogg",
-      "demonstração": "audios/levem_demonstração.mp3"
+      "soprano": "audios/46_vem_reinar_soprano.ogg",
+      "contralto": "audios/46_vem_reinar_contralto.ogg",
+      "tenor": "audios/46_vem_reinar_tenor.ogg",
+      "baixo": "audios/46_vem_reinar_baixo.ogg",
+      "demonstração": "audios/46_vem_reinar.ogg"
     }
   }
 ]
