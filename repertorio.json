@@ -44,6 +44,17 @@
     }
   },
   {
+    "numero": "29",
+    "titulo": "Corações corajosos",
+    "audios": {
+      "soprano": "audios/29_coracoes_corajosos_soprano.ogg",
+      "contralto": "audios/29_coracoes_corajosos_contralto.ogg",
+      "tenor": "audios/29_coracoes_corajosos_tenor.ogg",
+      "baixo": "audios/29_coracoes_corajosos_baixo.ogg",
+      "demonstração": "audios/29_coracoes_corajosos.opus"
+    }
+  },
+  {
     "numero": "37",
     "titulo": "Aleluia a Ti",
     "audios": {
