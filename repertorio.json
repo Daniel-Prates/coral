@@ -54,6 +54,17 @@
       "demonstração": "audios/29_coracoes_corajosos.opus"
     }
   },
+    {
+    "numero": "32",
+    "titulo": "Seguro  nos braços de Deus",
+    "audios": {
+      "soprano": "audios/32_seguro_nos_bracos_de_Deus_soprano.ogg",
+      "contralto": "audios/32_seguro_nos_bracos_de_Deus_contralto.ogg",
+      "tenor": "audios/32_seguro_nos_bracos_de_Deus_tenor.ogg",
+      "baixo": "audios/32_seguro_nos_bracos_de_Deus_baixo.ogg",
+      "demonstração": "audios/32_seguro_nos_bracos_de_Deus_soprano.ogg"
+    }
+  },
   {
     "numero": "37",
     "titulo": "Aleluia a Ti",
