@@ -98,5 +98,16 @@
       "baixo": "audios/46_vem_reinar_baixo.ogg",
       "demonstração": "audios/46_vem_reinar.ogg"
     }
+  },
+    {
+    "numero": "47",
+    "titulo": "Deus o mundo amou",
+    "audios": {
+      "soprano": "audios/47_deus_o_mundo_amou_soprano.ogg",
+      "contralto": "audios/47_deus_o_mundo_amou_contralto.ogg",
+      "tenor": "audios/47_deus_o_mundo_amou_tenor.ogg",
+      "baixo": "audios/47_deus_o_mundo_amou_baixo.ogg",
+      "demonstração": "audios/47_deus_o_mundo_amou_soprano.ogg"
+    }
   }
 ]
