@@ -87,6 +87,17 @@
       "demonstração": "audios/39_eu_te_louvo_o_deus.ogg"
     }
   },
+    {
+    "numero": "44",
+    "titulo": "Que grande amor",
+    "audios": {
+      "soprano": "audios/44_que_grande_amor_soprano.ogg",
+      "contralto": "audios/44_que_grande_amor_contralto.ogg",
+      "tenor": "audios/44_que_grande_amor_tenor.ogg",
+      "baixo": "audios/44_que_grande_amor_baixo.ogg",
+      "demonstração": "audios/44_que_grande_amor.ogg"
+    }
+  },
 
   {
     "numero": "45",
