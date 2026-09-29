@@ -76,6 +76,17 @@
       "demonstração": "audios/37_aleluia_a_ti.ogg"
     }
   },
+    {
+    "numero": "39",
+    "titulo": "Eu te louvo ó Deus",
+    "audios": {
+      "soprano": "audios/39_eu_te_louvo_o_deus_soprano.ogg",
+      "contralto": "audios/39_eu_te_louvo_o_deus_contralto.ogg",
+      "tenor": "audios/39_eu_te_louvo_o_deus_tenor.ogg",
+      "baixo": "audios/39_eu_te_louvo_o_deus_baixo.ogg",
+      "demonstração": "audios/39_eu_te_louvo_o_deus.ogg"
+    }
+  },
 
   {
     "numero": "45",
