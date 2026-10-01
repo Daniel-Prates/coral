@@ -1,5 +1,16 @@
 [
   {
+    "numero": "07",
+    "titulo": "Ao contemplar a rude Cruz",
+    "audios": {
+      "soprano": "audios/7_ao_contemplar_a_rude_cruz_soprano.ogg",
+      "contralto": "audios/7_ao_contemplar_a_rude_cruz_contralto.ogg",
+      "tenor": "audios/7_ao_contemplar_a_rude_cruz_tenor.ogg",
+      "baixo": "audios/7_ao_contemplar_a_rude_cruz_baixo.ogg",
+      "demonstração": "audios/7_ao_contemplar_a_rude_cruz.ogg"
+    }
+  },
+  {
     "numero": "16",
     "titulo": "Asas da Alva",
     "audios": {
