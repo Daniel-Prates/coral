@@ -65,7 +65,7 @@
       "demonstração": "audios/29_coracoes_corajosos.opus"
     }
   },
-    {
+  {
     "numero": "32",
     "titulo": "Seguro  nos braços de Deus",
     "audios": {
@@ -74,6 +74,17 @@
       "tenor": "audios/32_seguro_nos_bracos_de_Deus_tenor.ogg",
       "baixo": "audios/32_seguro_nos_bracos_de_Deus_baixo.ogg",
       "demonstração": "audios/32_seguro_nos_bracos_de_Deus.opus"
+    }
+  },
+  {
+    "numero": "36",
+    "titulo": "Se mais eu pudesse",
+    "audios": {
+      "soprano": "audios/36_se_mais_eu_pudesse_soprano.mp3",
+      "contralto": "audios/36_se_mais_eu_pudesse_contralto.mp3",
+      "tenor": "audios/36_se_mais_eu_pudesse_tenor.mp3",
+      "baixo": "audios/36_se_mais_eu_pudesse_baixo.mp3",
+      "demonstração": "audios/36_se_mais_eu_pudesse.mp3"
     }
   },
   {
@@ -87,7 +98,7 @@
       "demonstração": "audios/37_aleluia_a_ti.ogg"
     }
   },
-    {
+  {
     "numero": "39",
     "titulo": "Eu te louvo ó Deus",
     "audios": {
@@ -98,7 +109,7 @@
       "demonstração": "audios/39_eu_te_louvo_o_deus.ogg"
     }
   },
-    {
+  {
     "numero": "44",
     "titulo": "Que grande amor",
     "audios": {
@@ -132,7 +143,7 @@
       "demonstração": "audios/46_vem_reinar.ogg"
     }
   },
-    {
+  {
     "numero": "47",
     "titulo": "Deus o mundo amou",
     "audios": {
