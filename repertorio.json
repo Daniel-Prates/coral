@@ -11,6 +11,28 @@
     }
   },
   {
+    "numero": "08",
+    "titulo": "Se meu povo",
+    "audios": {
+      "soprano": "audios/08_se_meu_povo_soprano.ogg",
+      "contralto": "audios/08_se_meu_povo_contralto.ogg",
+      "tenor": "audios/08_se_meu_povo_tenor.ogg",
+      "baixo": "audios/08_se_meu_povo_baixo.ogg",
+      "demonstração": "audios/08_se_meu_povo.ogg"
+    }
+  },
+  {
+    "numero": "11",
+    "titulo": "Dai ao Senhor louvor",
+    "audios": {
+      "soprano": "audios/11_dai_ao_senhor_louvor_soprano.ogg",
+      "contralto": "audios/11_dai_ao_senhor_louvor_contralto.ogg",
+      "tenor": "audios/11_dai_ao_senhor_louvor_tenor.ogg",
+      "baixo": "audios/11_dai_ao_senhor_louvor_baixo.ogg",
+      "demonstração": "audios/11_dai_ao_senhor_louvor.ogg"
+    }
+  },
+  {
     "numero": "16",
     "titulo": "Asas da Alva",
     "audios": {
