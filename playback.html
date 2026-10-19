@@ -8,8 +8,13 @@
 <body>
     <a href="index.html" class="voltar">VOLTAR</a>
     <h1 class="titulo">PLAYBACK</h1>
+    <div class="player-container">
+    <h3 class="musica">7.Ao contemplar a rude cruz</h3>
+    <audio src="#" controls></audio>
+    <a href="#" download="#" class="botao-download">Baixar música</a>
+    </div>
 <ul>
-    <li><a href="#">07.Ao contemplar a rude cruz</a></li>
+
     <li><a href="#">08.Se meu povo orar</a></li>
     <li><a href="#">11.Dai ao Senhor louvor</a></li>
     <li><a href="#">16.Asas da alva</a></li>
@@ -26,6 +31,7 @@
     <li><a href="#">46.Vem reinar</a></li>
     <li><a href="#">47.Deus o mundo amou</a></li>
 </ul>
+
 </body>
 <style>
     body{
@@ -43,6 +49,12 @@
         text-decoration: none;
         list-style-type: none;
     }
+    .musica{
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #0c0c0c;
+        text-decoration: none;
+    }
     .voltar{
         font-family: Arial, Helvetica, sans-serif;
         color: #0c0c0c;
@@ -58,6 +70,37 @@
         color: #fff;
         text-align: center;
         text-decoration: underline;
+    }
+        /* Container que junta o player e o botão */
+.player-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 320px;
+  padding: 15px;
+  border: 2px solid #cbd5e1; /* Linha sutil em volta */
+  border-radius: 8px;        /* Cantos arredondados */
+  background-color: #f8fafc;
+}
+
+/* Transforma o link em um botão de destaque */
+.botao-download {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;      /* Remove o sublinhado padrão de links */
+  background-color: #22c55e;  /* Cor verde para download */
+  color: white;               /* Cor do texto */
+  padding: 10px 16px;
+  border-radius: 6px;         /* Cantos arredondados do botão */
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+/* Efeito visual ao passar o mouse */
+.botao-download:hover {
+  background-color: #16a34a;  /* Verde mais escuro */
+}
     }
 </style>
 </html>
