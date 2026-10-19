@@ -8,7 +8,7 @@
       "tenor": "audios/07_ao_contemplar_a_rude_cruz_tenor.ogg",
       "baixo": "audios/07_ao_contemplar_a_rude_cruz_baixo.ogg",
       "demonstração": "audios/07_ao_contemplar_a_rude_cruz.ogg",
-      "playback": "audios/07_ao_contemplar_a_rude_cruz.ogg"
+      "playback": "audios/07_ao_contemplar_a_rude_cruz_playback.opus"
     }
   },
   {
@@ -44,7 +44,7 @@
       "tenor": "audios/16_asas_da_alva_tenor.opus",
       "baixo": "audios/16_asas_da_alva_baixo.opus",
       "demonstração": "audios/16_asas_da_alva.ogg",
-      "playback": "audios/playback"
+      "playback": "audios/16_asas_da_alva_playback.opus"
     }
   },
   {
@@ -92,7 +92,7 @@
       "tenor": "audios/29_coracoes_corajosos_tenor.ogg",
       "baixo": "audios/29_coracoes_corajosos_baixo.ogg",
       "demonstração": "audios/29_coracoes_corajosos.opus",
-      "playback": "audios/playback"
+      "playback": "audios/29_coracoes_corajosos_playback.opus"
     }
   },
   {
