@@ -1,106 +1,179 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <a href="index.html" class="voltar">VOLTAR</a>
+  </head>
+  <body>
+    <a href="index.html" class="botao-voltar">VOLTAR</a>
     <h1 class="titulo">PLAYBACK</h1>
-    <div class="player-container">
-    <h3 class="musica">7.Ao contemplar a rude cruz</h3>
-    <audio src="#" controls></audio>
-    <a href="#" download="#" class="botao-download">Baixar música</a>
+
+    <!-- Criação das DIVs com as músicas -->
+    <div class="container-principal">
+      <div class="player-container">
+        <h3 class="musica">7.Ao contemplar a rude cruz</h3>
+        <audio src="#" controls></audio>
+        <a href="#" download="#" class="botao-download">Baixar música</a>
+      </div>
+
+      <div class="player-container">
+        <h3 class="musica">08.Se meu povo orar</h3>
+        <audio src="#" controls></audio>
+        <a href="#" download="#" class="botao-download">Baixar música</a>
+      </div>
+
+      <div class="player-container">
+        <h3 class="musica">11.Dai ao Senhor louvor</h3>
+        <audio src="#" controls></audio>
+        <a href="#" download="#" class="botao-download">Baixar música</a>
+      </div>
+
+      <div class="player-container">
+        <h3 class="musica">16.Asas da alva</h3>
+        <audio src="#" controls></audio>
+        <a href="#" download="#" class="botao-download">Baixar música</a>
+      </div>
+
+      <div class="player-container">
+        <h3 class="musica">17.Vem brilhar Jesus</h3>
+        <audio src="#" controls></audio>
+        <a href="#" download="#" class="botao-download">Baixar música</a>
+      </div>
+
+      <div class="player-container">
+        <h3 class="musica">18.Levem a luz</h3>
+        <audio src="#" controls></audio>
+        <a href="#" download="#" class="botao-download">Baixar música</a>
+      </div>
+
+      <div class="player-container">
+        <h3 class="musica">22.Glória</h3>
+        <audio src="#" controls></audio>
+        <a href="#" download="#" class="botao-download">Baixar música</a>
+      </div>
+
+      <div class="player-container">
+        <h3 class="musica">29.Corações corajosos</h3>
+        <audio src="#" controls></audio>
+        <a href="#" download="#" class="botao-download">Baixar música</a>
+      </div>
+
+      <div class="player-container">
+        <h3 class="musica">32.Seguro nos braços de Deus</h3>
+        <audio src="#" controls></audio>
+        <a href="#" download="#" class="botao-download">Baixar música</a>
+      </div>
+
+      <div class="player-container">
+        <h3 class="musica">36.Se mais eu pudesse</h3>
+        <audio src="#" controls></audio>
+        <a href="#" download="#" class="botao-download">Baixar música</a>
+      </div>
+
+      <div class="player-container">
+        <h3 class="musica">37.Aleluia a Ti</h3>
+        <audio src="#" controls></audio>
+        <a href="#" download="#" class="botao-download">Baixar música</a>
+      </div>
+
+      <div class="player-container">
+        <h3 class="musica">39.Eu te louvo ó Deus</h3>
+        <audio src="#" controls></audio>
+        <a href="#" download="#" class="botao-download">Baixar música</a>
+      </div>
+
+      <div class="player-container">
+        <h3 class="musica">44.Que grande amor</h3>
+        <audio src="#" controls></audio>
+        <a href="#" download="#" class="botao-download">Baixar música</a>
+      </div>
+
+      <div class="player-container">
+        <h3 class="musica">45.Rei de amor</h3>
+        <audio src="#" controls></audio>
+        <a href="#" download="#" class="botao-download">Baixar música</a>
+      </div>
+
+      <div class="player-container">
+        <h3 class="musica">46.Vem reinar</h3>
+        <audio src="#" controls></audio>
+        <a href="#" download="#" class="botao-download">Baixar música</a>
+      </div>
+
+      <div class="player-container">
+        <h3 class="musica">47.Deus o mundo amou</h3>
+        <audio src="#" controls></audio>
+        <a href="#" download="#" class="botao-download">Baixar música</a>
+      </div>
     </div>
-<ul>
+  </body>
+  <style>
+    body {
+      background-color: #0e172a;
+    }
+    .container-principal {
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: center;
+      align-content: center;
+      gap: 20px;
+    }
+    a {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+      text-decoration: none;
+    }
+    .musica {
+      font-size: 1rem;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #0c0c0c;
+      text-decoration: none;
+    }
+    .botao-voltar {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #0c0c0c;
+      background-color: #eeeff2;
+      padding: 5px;
+      border: 2px solid #c4c6c8;
+      border-radius: 4px;
+      box-shadow: 2px 2px 2px #030b1d;
+      margin: 10px;
+    }
+    .titulo {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+      text-align: center;
+      text-decoration: underline;
+    }
+    /* Container que junta o player e o botão */
+    .player-container {
+      display: grid;
+      gap: 12px;
+      max-width: 320px;
+      padding: 15px;
+      border: 2px solid #cbd5e1; /* Linha sutil em volta */
+      border-radius: 8px; /* Cantos arredondados */
+      background-color: #f8fafc;
+    }
 
-    <li><a href="#">08.Se meu povo orar</a></li>
-    <li><a href="#">11.Dai ao Senhor louvor</a></li>
-    <li><a href="#">16.Asas da alva</a></li>
-    <li><a href="#">17.Vem brilhar Jesus</a></li>
-    <li><a href="#">18.Levem a luz</a></li>
-    <li><a href="#">22.Glória</a></li>
-    <li><a href="#">29.Corações corajosos</a></li>
-    <li><a href="#">32.Seguro nos braços de Deus</a></li>
-    <li><a href="#">36.Se mais eu pudesse</a></li>
-    <li><a href="#">37.Aleluia a Ti</a></li>
-    <li><a href="#">39.Eu te louvo ó Deus</a></li>
-    <li><a href="#">44.Que grande amor</a></li>
-    <li><a href="#">45.Rei de amor</a></li>
-    <li><a href="#">46.Vem reinar</a></li>
-    <li><a href="#">47.Deus o mundo amou</a></li>
-</ul>
+    /* Transforma o link em um botão de destaque */
+    .botao-download {
+      display: inline-block;
+      text-align: center;
+      text-decoration: none; /* Remove o sublinhado padrão de links */
+      background-color: #22c55e; /* Cor verde para download */
+      color: white; /* Cor do texto */
+      padding: 10px 16px;
+      border-radius: 6px; /* Cantos arredondados do botão */
+      font-weight: bold;
+      font-size: 14px;
+      transition: background-color 0.2s;
+    }
 
-</body>
-<style>
-    body{
-        background-color: #0E172A;
+    /* Efeito visual ao passar o mouse */
+    .botao-download:hover {
+      background-color: #16a34a; /* Verde mais escuro */
     }
-    a{
-        font-family: Arial, Helvetica, sans-serif;
-        color: #fff;
-        text-decoration: none;
-    }
-    li a{
-        font-size: 2rem;
-    }
-    li{
-        text-decoration: none;
-        list-style-type: none;
-    }
-    .musica{
-        font-size: 2rem;
-        font-family: Arial, Helvetica, sans-serif;
-        color: #0c0c0c;
-        text-decoration: none;
-    }
-    .voltar{
-        font-family: Arial, Helvetica, sans-serif;
-        color: #0c0c0c;
-        background-color: #eeeff2;
-        padding: 5px;
-        border: 2px solid #c4c6c8;
-        border-radius: 4px;
-        box-shadow: 2px 2px 2px #030b1d;
-        margin: 10px;
-    }
-    .titulo{
-        font-family: Arial, Helvetica, sans-serif;
-        color: #fff;
-        text-align: center;
-        text-decoration: underline;
-    }
-        /* Container que junta o player e o botão */
-.player-container {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  max-width: 320px;
-  padding: 15px;
-  border: 2px solid #cbd5e1; /* Linha sutil em volta */
-  border-radius: 8px;        /* Cantos arredondados */
-  background-color: #f8fafc;
-}
-
-/* Transforma o link em um botão de destaque */
-.botao-download {
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;      /* Remove o sublinhado padrão de links */
-  background-color: #22c55e;  /* Cor verde para download */
-  color: white;               /* Cor do texto */
-  padding: 10px 16px;
-  border-radius: 6px;         /* Cantos arredondados do botão */
-  font-weight: bold;
-  font-size: 14px;
-  transition: background-color 0.2s;
-}
-
-/* Efeito visual ao passar o mouse */
-.botao-download:hover {
-  background-color: #16a34a;  /* Verde mais escuro */
-}
-    }
-</style>
+  </style>
 </html>
