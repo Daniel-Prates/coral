@@ -7,7 +7,8 @@
       "contralto": "audios/07_ao_contemplar_a_rude_cruz_contralto.ogg",
       "tenor": "audios/07_ao_contemplar_a_rude_cruz_tenor.ogg",
       "baixo": "audios/07_ao_contemplar_a_rude_cruz_baixo.ogg",
-      "demonstração": "audios/07_ao_contemplar_a_rude_cruz.ogg"
+      "demonstração": "audios/07_ao_contemplar_a_rude_cruz.ogg",
+      "playback": "audios/07_ao_contemplar_a_rude_cruz.ogg"
     }
   },
   {
@@ -18,7 +19,8 @@
       "contralto": "audios/08_se_meu_povo_contralto.ogg",
       "tenor": "audios/08_se_meu_povo_tenor.ogg",
       "baixo": "audios/08_se_meu_povo_baixo.ogg",
-      "demonstração": "audios/08_se_meu_povo.mp3"
+      "demonstração": "audios/08_se_meu_povo.mp3",
+      "playback": "audios/playback"
     }
   },
   {
@@ -29,7 +31,8 @@
       "contralto": "audios/11_dai_ao_senhor_louvor_contralto.ogg",
       "tenor": "audios/11_dai_ao_senhor_louvor_tenor.ogg",
       "baixo": "audios/11_dai_ao_senhor_louvor_baixo.ogg",
-      "demonstração": "audios/11_dai_ao_senhor_louvor.ogg"
+      "demonstração": "audios/11_dai_ao_senhor_louvor.ogg",
+      "playback": "audios/playback"
     }
   },
   {
@@ -40,7 +43,8 @@
       "contralto": "audios/16_asas_da_alva_contralto.opus",
       "tenor": "audios/16_asas_da_alva_tenor.opus",
       "baixo": "audios/16_asas_da_alva_baixo.opus",
-      "demonstração": "audios/16_asas_da_alva.ogg"
+      "demonstração": "audios/16_asas_da_alva.ogg",
+      "playback": "audios/playback"
     }
   },
   {
@@ -51,7 +55,8 @@
       "contralto": "audios/17_vem_brilhar_em_mim_contralto.ogg",
       "tenor": "audios/17_vem_brilhar_em_mim_tenor.ogg",
       "baixo": "audios/17_vem_brilhar_em_mim_baixo.ogg",
-      "demonstração": "audios/17_vem_brilhar_em_mim.mp3"
+      "demonstração": "audios/17_vem_brilhar_em_mim.mp3",
+      "playback": "audios/playback"
     }
   },
   {
@@ -62,7 +67,8 @@
       "contralto": "audios/18_levem_a_luz_contralto.ogg",
       "tenor": "audios/18_levem_a_luz_tenor.ogg",
       "baixo": "audios/18_levem_a_luz_baixo.ogg",
-      "demonstração": "audios/18_levem_a_luz.opus"
+      "demonstração": "audios/18_levem_a_luz.opus",
+      "playback": "audios/playback"
     }
   },
   {
@@ -73,7 +79,8 @@
       "contralto": "audios/22_gloria_contralto.ogg",
       "tenor": "audios/22_gloria_tenor.ogg",
       "baixo": "audios/22_gloria_baixo.ogg",
-      "demonstração": "audios/22_gloria.opus"
+      "demonstração": "audios/22_gloria.opus",
+      "playback": "audios/playback"
     }
   },
   {
@@ -84,7 +91,8 @@
       "contralto": "audios/29_coracoes_corajosos_contralto.ogg",
       "tenor": "audios/29_coracoes_corajosos_tenor.ogg",
       "baixo": "audios/29_coracoes_corajosos_baixo.ogg",
-      "demonstração": "audios/29_coracoes_corajosos.opus"
+      "demonstração": "audios/29_coracoes_corajosos.opus",
+      "playback": "audios/playback"
     }
   },
   {
@@ -95,7 +103,8 @@
       "contralto": "audios/32_seguro_nos_bracos_de_Deus_contralto.ogg",
       "tenor": "audios/32_seguro_nos_bracos_de_Deus_tenor.ogg",
       "baixo": "audios/32_seguro_nos_bracos_de_Deus_baixo.ogg",
-      "demonstração": "audios/32_seguro_nos_bracos_de_Deus.opus"
+      "demonstração": "audios/32_seguro_nos_bracos_de_Deus.opus",
+      "playback": "audios/playback"
     }
   },
   {
@@ -106,7 +115,8 @@
       "contralto": "audios/36_se_mais_eu_pudesse_contralto.mp3",
       "tenor": "audios/36_se_mais_eu_pudesse_tenor.mp3",
       "baixo": "audios/36_se_mais_eu_pudesse_baixo.mp3",
-      "demonstração": "audios/36_se_mais_eu_pudesse.mp3"
+      "demonstração": "audios/36_se_mais_eu_pudesse.mp3",
+      "playback": "audios/playback"
     }
   },
   {
@@ -117,7 +127,8 @@
       "contralto": "audios/37_aleluia_a_ti_contralto.ogg",
       "tenor": "audios/37_aleluia_a_ti_tenor.ogg",
       "baixo": "audios/37_aleluia_a_ti_baixo.ogg",
-      "demonstração": "audios/37_aleluia_a_ti.ogg"
+      "demonstração": "audios/37_aleluia_a_ti.ogg",
+      "playback": "audios/playback"
     }
   },
   {
@@ -128,7 +139,8 @@
       "contralto": "audios/39_eu_te_louvo_o_deus_contralto.ogg",
       "tenor": "audios/39_eu_te_louvo_o_deus_tenor.ogg",
       "baixo": "audios/39_eu_te_louvo_o_deus_baixo.ogg",
-      "demonstração": "audios/39_eu_te_louvo_o_deus.ogg"
+      "demonstração": "audios/39_eu_te_louvo_o_deus.ogg",
+      "playback": "audios/playback"
     }
   },
   {
@@ -139,7 +151,8 @@
       "contralto": "audios/44_que_grande_amor_contralto.ogg",
       "tenor": "audios/44_que_grande_amor_tenor.ogg",
       "baixo": "audios/44_que_grande_amor_baixo.ogg",
-      "demonstração": "audios/44_que_grande_amor.ogg"
+      "demonstração": "audios/44_que_grande_amor.ogg",
+      "playback": "audios/playback"
     }
   },
 
@@ -151,7 +164,8 @@
       "contralto": "audios/45_rei_de_amor_contralto.ogg",
       "tenor": "audios/45_rei_de_amor_tenor.ogg",
       "baixo": "audios/45_rei_de_amor_baixo.ogg",
-      "demonstração": "audios/45_rei_de_amor.ogg"
+      "demonstração": "audios/45_rei_de_amor.ogg",
+      "playback": "audios/playback"
     }
   },
   {
@@ -162,7 +176,8 @@
       "contralto": "audios/46_vem_reinar_contralto.ogg",
       "tenor": "audios/46_vem_reinar_tenor.ogg",
       "baixo": "audios/46_vem_reinar_baixo.ogg",
-      "demonstração": "audios/46_vem_reinar.ogg"
+      "demonstração": "audios/46_vem_reinar.ogg",
+      "playback": "audios/playback"
     }
   },
   {
@@ -173,7 +188,8 @@
       "contralto": "audios/47_deus_o_mundo_amou_contralto.ogg",
       "tenor": "audios/47_deus_o_mundo_amou_tenor.ogg",
       "baixo": "audios/47_deus_o_mundo_amou_baixo.ogg",
-      "demonstração": "audios/47_deus_o_mundo_amou.ogg"
+      "demonstração": "audios/47_deus_o_mundo_amou.ogg",
+      "playback": "audios/playback"
     }
   }
 ]

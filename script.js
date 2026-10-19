@@ -175,3 +175,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+//=====-----Aqui começa o JS da página doPlayback-----=====
+
+fetch('repertorio.json')
+.then(response => response.json())
+.then(repertorio => {
+  const container = document.getElementById('lista-playbacks');
+
+  container.innerHTML = repertorio
+  .filter(item => item.audios && item.audios.playback)
+.map(item => `
+        <article class="player-container">
+          <h3 class="musica">${item.numero}. ${item.titulo}</h3>
+          <audio src="${item.audios.playback}" controls preload="none"></audio>
+          <a href="${item.audios.playback}" download="${item.numero}_${item.titulo}_playback" class="botao-download">Baixar playback</a>
+        </article>
+      `).join('');
+  })
+  .catch(error => console.error('Erro ao carregar o repertório:', error));

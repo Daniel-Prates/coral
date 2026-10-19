@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Homemade+Apple&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Homemade+Apple&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 body {
   transition: background-color 1s ease !important;
 }
@@ -97,7 +97,7 @@ body {
   font-weight: 500;
   font-style: normal;
   /*text-decoration: underline;*/
-  color: #F8FAFC;
+  color: #f8fafc;
   margin-bottom: 50px !important;
 }
 .search-container {
@@ -111,4 +111,85 @@ body {
   transform: translatey(50%);
   color: #64748b;
   pointer-events: none;
+}
+/*=====-----Aqui começa o CSS da página de Playbacks-----=====*/
+body.body-playback {
+  background-color: #030b1d;
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Container de Grid para as músicas */
+.container-principal-playback {
+  display: grid;
+  /* Cria uma grade adaptável: colunas de no mínimo 280px */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+.botao-voltar {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0c0c0c;
+  background-color: #eeeff2;
+  padding: 6px 14px;
+  border: 2px solid #c4c6c8;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px #030b1d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.titulo-playback {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+/* Card individual da música */
+.player-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 15px;
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;
+  background-color: #f8fafc;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.musica {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0c0c0c;
+  margin: 0;
+}
+
+.player-container audio {
+  width: 100%; /* Ajusta o player à largura do card */
+}
+
+/* Botão de Download */
+.botao-download {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background-color: #203666;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.botao-download:hover {
+  background-color: #0369a1;
 }
