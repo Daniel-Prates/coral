@@ -188,7 +188,7 @@ fetch('repertorio.json')
         <article class="player-container">
           <h3 class="musica">${item.numero}. ${item.titulo}</h3>
           <audio src="${item.audios.playback}" controls preload="none"></audio>
-          <a href="${item.audios.playback}" download="${item.numero}_${item.titulo}_playback" class="botao-download">Baixar playback</a>
+          <a href="${item.audios.playback}" download="${item.numero}_${item.titulo}_playback" class="botao-download">Baixar</a>
         </article>
       `).join('');
   })
