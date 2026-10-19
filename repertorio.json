@@ -35,6 +35,18 @@
       "playback": "audios/playback"
     }
   },
+    {
+    "numero": "13",
+    "titulo": "Toma meu coração",
+    "audios": {
+      "soprano": "audios/13_toma_meu_coracao_soprano.ogg",
+      "contralto": "audios/13_toma_meu_coracao_contralto.ogg",
+      "tenor": "audios/13_toma_meu_coracao_tenor.ogg",
+      "baixo": "audios/13_toma_meu_coracao_baixo.ogg",
+      "demonstração": "audios/13_toma_meu_coracao.ogg",
+      "playback": "audios/13_toma_meu_coracao_playback.opus"
+    }
+  },
   {
     "numero": "16",
     "titulo": "Asas da Alva",
@@ -81,6 +93,18 @@
       "baixo": "audios/22_gloria_baixo.ogg",
       "demonstração": "audios/22_gloria.opus",
       "playback": "audios/playback"
+    }
+  },
+    {
+    "numero": "27",
+    "titulo": "Shalom",
+    "audios": {
+      "soprano": "audios/27_shalom_soprano.ogg",
+      "contralto": "audios/27_shalom_contralto.ogg",
+      "tenor": "audios/27_shalom_tenor.ogg",
+      "baixo": "audios/27_shalom_baixo.ogg",
+      "demonstração": "audios/27_shalom.opus",
+      "playback": "audios/27_shalom_playback.opus"
     }
   },
   {
