@@ -175,9 +175,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
-//=====-----Aqui começa o JS da página doPlayback-----=====
+//=====-----Aqui começa o JS da página do Playback-----=====
 
-fetch('repertorio.json')
+fetch('playbacks.json')
 .then(response => response.json())
 .then(repertorio => {
   const container = document.getElementById('lista-playbacks');

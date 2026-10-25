@@ -1,0 +1,136 @@
+[
+    {
+    "numero": "00",
+    "titulo": "Tema de abertura Natal 2026",
+    "audios": {
+       "playback": "audios/00_tema_abertura_natal_playback.mp3"
+    }
+  },
+ {
+    "numero": "07",
+    "titulo": "Ao contemplar a rude Cruz",
+    "audios": {
+      "playback": "audios/07_ao_contemplar_a_rude_cruz_playback.opus"
+    }
+  },
+  {
+    "numero": "08",
+    "titulo": "Se meu povo orar",
+    "audios": {
+      "playback": "audios/08_se_meu_povo_playback.mp3"
+    }
+  },
+  {
+    "numero": "11",
+    "titulo": "Dai ao Senhor louvor",
+    "audios": {
+      "playback": "audios/playback"
+    }
+  },
+    {
+    "numero": "13",
+    "titulo": "Toma meu coração",
+    "audios": {
+      "playback": "audios/13_toma_meu_coracao_playback.opus"
+    }
+  },
+  {
+    "numero": "16",
+    "titulo": "Asas da Alva",
+    "audios": {
+      "playback": "audios/16_asas_da_alva_playback.opus"
+    }
+  },
+  {
+    "numero": "17",
+    "titulo": "Vem brilhar em Jesus",
+    "audios": {
+      "playback": "audios/playback"
+    }
+  },
+  {
+    "numero": "18",
+    "titulo": "Levem a Luz",
+    "audios": {
+      "playback": "audios/playback"
+    }
+  },
+  {
+    "numero": "22",
+    "titulo": "Glória",
+    "audios": {
+      "playback": "audios/22_gloria_playback.mp3"
+    }
+  },
+    {
+    "numero": "27",
+    "titulo": "Shalom",
+    "audios": {
+      "playback": "audios/27_shalom_playback.opus"
+    }
+  },
+  {
+    "numero": "29",
+    "titulo": "Corações corajosos",
+    "audios": {
+      "playback": "audios/29_coracoes_corajosos_playback.opus"
+    }
+  },
+  {
+    "numero": "32",
+    "titulo": "Seguro  nos braços de Deus",
+    "audios": {
+      "playback": "audios/playback"
+    }
+  },
+  {
+    "numero": "36",
+    "titulo": "Se mais eu pudesse",
+    "audios": {
+      "playback": "audios/playback"
+    }
+  },
+  {
+    "numero": "37",
+    "titulo": "Aleluia a Ti",
+    "audios": {
+      "playback": "audios/37_aleluia_a_ti_playback.mp3"
+    }
+  },
+  {
+    "numero": "39",
+    "titulo": "Eu te louvo ó Deus",
+    "audios": {
+      "playback": "audios/playback"
+    }
+  },
+  {
+    "numero": "44",
+    "titulo": "Que grande amor",
+    "audios": {
+      "playback": "audios/playback"
+    }
+  },
+
+  {
+    "numero": "45",
+    "titulo": "Rei de amor",
+    "audios": {
+      "playback": "audios/playback"
+    }
+  },
+  {
+    "numero": "46",
+    "titulo": "Vem reinar",
+    "audios": {
+      "playback": "audios/46_vem_reinar_playback.mp3"
+    }
+  },
+  {
+    "numero": "47",
+    "titulo": "Deus o mundo amou",
+    "audios": {
+      "playback": "audios/47_deus_o_mundo_amou_playback.mp3"
+    }
+  }
+]

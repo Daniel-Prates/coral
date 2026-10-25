@@ -20,7 +20,7 @@
       "tenor": "audios/08_se_meu_povo_tenor.ogg",
       "baixo": "audios/08_se_meu_povo_baixo.ogg",
       "demonstração": "audios/08_se_meu_povo.mp3",
-      "playback": "audios/playback"
+      "playback": "audios/08_se_meu_povo_playback.mp3"
     }
   },
   {
@@ -92,7 +92,7 @@
       "tenor": "audios/22_gloria_tenor.ogg",
       "baixo": "audios/22_gloria_baixo.ogg",
       "demonstração": "audios/22_gloria.opus",
-      "playback": "audios/playback"
+      "playback": "audios/22_gloria_playback.mp3"
     }
   },
     {
@@ -152,7 +152,7 @@
       "tenor": "audios/37_aleluia_a_ti_tenor.ogg",
       "baixo": "audios/37_aleluia_a_ti_baixo.ogg",
       "demonstração": "audios/37_aleluia_a_ti.ogg",
-      "playback": "audios/playback"
+      "playback": "audios/37_aleluia_a_ti_playback.mp3"
     }
   },
   {
@@ -201,7 +201,7 @@
       "tenor": "audios/46_vem_reinar_tenor.ogg",
       "baixo": "audios/46_vem_reinar_baixo.ogg",
       "demonstração": "audios/46_vem_reinar.ogg",
-      "playback": "audios/playback"
+      "playback": "audios/46_vem_reinar_playback.mp3"
     }
   },
   {
@@ -213,7 +213,7 @@
       "tenor": "audios/47_deus_o_mundo_amou_tenor.ogg",
       "baixo": "audios/47_deus_o_mundo_amou_baixo.ogg",
       "demonstração": "audios/47_deus_o_mundo_amou.ogg",
-      "playback": "audios/playback"
+      "playback": "audios/47_deus_o_mundo_amou_playback.mp3"
     }
   }
 ]
