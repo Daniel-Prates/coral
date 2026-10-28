@@ -96,6 +96,18 @@
     }
   },
     {
+    "numero": "25",
+    "titulo": "Tu és (Medley)",
+    "audios": {
+      "soprano": "audios/25_tu_es_soprano.ogg",
+      "contralto": "audios/25_tu_es_contralto.ogg",
+      "tenor": "audios/25_tu_es_tenor.ogg",
+      "baixo": "audios/25_tu_es_baixo.ogg",
+      "demonstração": "audios/25_tu_es.ogg",
+      "playback": "audios/25_tu_es_playback.mp3"
+    }
+  },
+    {
     "numero": "27",
     "titulo": "Shalom",
     "audios": {
