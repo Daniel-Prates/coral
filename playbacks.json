@@ -1,5 +1,5 @@
 [
-    {
+  {
     "numero": "00",
     "titulo": "Tema de abertura Natal 2026",
     "audios": {
@@ -60,6 +60,13 @@
     "titulo": "Glória",
     "audios": {
       "playback": "audios/22_gloria_playback.mp3"
+    }
+  },
+  {
+    "numero": "25",
+    "titulo": "Tu és minha vida",
+    "audios": {
+      "playback": "audios/25_tu_es_minha_vida_playback.mp3"
     }
   },
     {
